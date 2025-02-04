@@ -1,0 +1,131 @@
+/* Responsive  */
+    
+@media (max-width: 756px){
+    .topnav{
+      display: none;
+
+    }
+
+    
+}
+    @media (max-width: 756px) {
+        .header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+}
+    }
+    
+    
+    @media (max-width:800px){
+        img{
+            width:auto;
+           
+     
+        }
+        .hello{
+            font-size: 20px;
+        }
+    }
+    @media (max-width:756px){
+    .feature{
+        display: flex;
+        flex-wrap: wrap;
+        p{
+            font-size: 20px;
+            /* text-align: justify; */
+        }
+         i{
+            font-size: 20px;
+
+         }
+    }
+        .choose{
+       h3,p{
+            font-size: 20px;
+        }
+        }
+    }
+    @media (max-width:500px){
+        .card1{
+            /* display: flex; */
+            flex-wrap: wrap;
+            gap:20px;
+        }
+    } 
+    @media (max-width:756px){
+        .card1{
+           
+            text-align: center;
+            display: flex;
+            /* justify-content: center; */
+            
+        
+    }
+}
+@media (max-width:856px){
+.features-icon {
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+}
+@media (max-width:500px){
+    .first{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .last{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+.feature{
+   
+    img {
+        height: 200px;
+        width: 200px;
+}
+}
+
+}
+@media (max-width:500px){
+
+footer{
+width: 100%;
+}
+.form{
+    position: relative;
+
+    input{
+        margin: 10px;
+        height: 30px;
+        width: 200px;
+        border-radius: 15px;
+       
+    }
+    input::placeholder{
+        font-size: 15px;
+        color: gray;
+        padding: 5px;
+        
+    }
+    button{
+        width: 50px;
+        height: 20px;
+        border-radius: 20px;
+        border-color: rgb(11, 11, 75);
+        font-size: 15px;
+        color: rgb(22, 22, 101);
+        position: absolute;
+        left: 150px;
+        bottom: 18px;
+    }
+}
+.first{
+    display: flex;
+    /* justify-content: space-around; */
+   }
+}
