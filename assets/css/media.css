@@ -12,7 +12,7 @@
         .header {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 90%;
 }
     }
     
@@ -62,6 +62,9 @@
             
         
     }
+    .service{
+        flex-wrap: wrap;
+    }
 }
 @media (max-width:856px){
 .features-icon {
@@ -80,8 +83,22 @@
     .last{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-around;     
 }
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  img{
+    width: 400px;
+    height: 300px;
+  }
+}
+.team-card{
+    width: 50px;
+    height: 100px;
+}
+
 .feature{
    
     img {
@@ -93,9 +110,7 @@
 }
 @media (max-width:500px){
 
-footer{
-width: 100%;
-}
+/* footer form parts */
 .form{
     position: relative;
 
@@ -124,8 +139,49 @@ width: 100%;
         bottom: 18px;
     }
 }
-.first{
+
+  
+   .main{
     display: flex;
-    /* justify-content: space-around; */
+    flex-wrap: wrap;
    }
+   .card{
+    display: grid;
+    margin-right: 20px;
+    
+}
+
+
+    .info{
+            display: flex;
+           border: 2px solid rgba(0, 0, 0, 0.073);
+           width: 200px;
+           height: 100px;
+          
+           i{
+            border: 2px solid rgba(0, 0, 0, 0.081);
+            margin: 10px;
+            font-size: 15px;
+            width:20px;
+            height: 20px;
+            text-align: center;
+            padding: 10px;
+            color: rgb(56, 94, 175); 
+        }
+        div {
+            margin:10px;
+            line-height: 20px;   
+              
+         }
+         div h4{
+        font-size: 20px;
+        font-weight: 300;
+        word-spacing: 1px;
+        font-family: "Oswald",sans-serif;
+         }
+    }
+    .info:hover{
+          box-shadow:1px 1px 10px rgba(128, 128, 128, 0.429);
+
+    }
 }
