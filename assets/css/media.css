@@ -1,51 +1,80 @@
 /* Responsive  */
-    
+/* home page css  */
 @media (max-width: 756px){
     .topnav{
       display: none;
 
     }
-
-    
 }
     @media (max-width: 756px) {
         .header {
             display: flex;
             flex-direction: column;
-            width: 90%;
+            width: auto;
 }
+ /*home main image css  */
+ .hello h2{
+    font-size: 35px;
+ }
+    .hello p{
+        font-size: 20px;
     }
-    
-    
-    @media (max-width:800px){
-        img{
-            width:auto;
-           
-     
-        }
-        .hello{
-            font-size: 20px;
-        }
+ 
     }
-    @media (max-width:756px){
-    .feature{
-        display: flex;
-        flex-wrap: wrap;
-        p{
-            font-size: 20px;
-            /* text-align: justify; */
-        }
-         i{
-            font-size: 20px;
 
-         }
+    /* second image and feature parts */
+    @media (max-width:756px){
+        .feature{
+            display: flex;
+            flex-wrap: wrap;
+         
+        p{
+            font-size: 15px;
+            padding: 2px;
+            margin: 0px;  
+        }    
+        
     }
-        .choose{
-       h3,p{
+}
+    @media (max-width:500px){
+        .feature img{
+            width: 100%;
+            margin: 0px;
+        }
+        .icons i{
             font-size: 20px;
+         
         }
-        }
+        .icons  div {
+          
+                h2 {
+                    font-size: 25px;
+                    
+                }
+            }
     }
+    @media (max-width:856px){
+        .features-icon {
+            display: flex;
+            flex-wrap: wrap;
+           
+        }
+        }
+        @media (max-width:500px){
+            .containers{
+                margin: 0px;
+            }
+            .service1{
+                margin: 25px;
+                padding: 25px;
+                /* width: auto; */
+            }
+            .view{
+                margin: 5px;
+            }
+        }
+
+    /* home card parts */
     @media (max-width:500px){
         .card1{
             /* display: flex; */
@@ -53,27 +82,13 @@
             gap:20px;
         }
     } 
+    /* service page */
     @media (max-width:756px){
-        .card1{
-           
-            text-align: center;
-            display: flex;
-            /* justify-content: center; */
-            
-        
-    }
     .service{
         flex-wrap: wrap;
     }
 }
-@media (max-width:856px){
-.features-icon {
-    
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-}
+
 @media (max-width:500px){
     .first{
         display: flex;
@@ -85,32 +100,23 @@
         flex-wrap: wrap;
         justify-content: space-around;     
 }
+/* team card page */
 .team{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-  img{
-    width: 400px;
-    height: 300px;
-  }
+  
 }
 .team-card{
     width: 50px;
     height: 100px;
 }
 
-.feature{
-   
-    img {
-        height: 200px;
-        width: 200px;
-}
-}
+
 
 }
-@media (max-width:500px){
-
 /* footer form parts */
+
 .form{
     position: relative;
 
@@ -140,7 +146,7 @@
     }
 }
 
-  
+  /* contact page card parts */
    .main{
     display: flex;
     flex-wrap: wrap;
@@ -151,7 +157,7 @@
     
 }
 
-
+/* team page css */
     .info{
             display: flex;
            border: 2px solid rgba(0, 0, 0, 0.073);
@@ -180,8 +186,5 @@
         font-family: "Oswald",sans-serif;
          }
     }
-    .info:hover{
-          box-shadow:1px 1px 10px rgba(128, 128, 128, 0.429);
-
-    }
+   
 }
