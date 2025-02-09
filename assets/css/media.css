@@ -208,3 +208,36 @@
     width: 100%;
  }
   }
+/* responsive team page media css */
+@media (max-width:1000px){
+   
+
+    .team{
+        margin: 10px;
+        flex-wrap: wrap;
+        gap:60px;
+       
+    }
+.team-card{
+  width: auto;
+    h2,p{
+        font-size: 20px;
+    }
+}
+}
+/* service css */
+@media (max-width:1100px) {
+    .container{
+        margin: 10px;
+        padding: 10px;
+
+    }
+    
+.service{
+    width: 100%;
+    margin: 0px;
+    flex-wrap: wrap;
+    
+}
+}
+
