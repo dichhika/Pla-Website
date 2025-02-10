@@ -140,7 +140,7 @@ p{
     }
     /* footer parts */
 footer{
-    
+    margin-top: 50px;
     background-color:#092a49;
     color: #f9f9f9;
  .first{
@@ -245,15 +245,15 @@ span{
     box-shadow:1px 1px 10px rgba(128, 128, 128, 0.429);
 
   }
-  /* team page css */
-  .team{
+   /* team page css */
+   .team{
     margin: 30px;
     display: flex;
     gap:20px;
     
     .member{
         position: relative;
-        z-index: -1;
+        z-index: 1;
     }
     img{
         width: 100%;
@@ -263,13 +263,15 @@ span{
     .team-card{
         border: 2px solid white;
         border-radius: 20px;
-        width:40%;
+        width:50%;
         padding: 5px;
         text-align: center;
         position: absolute;
         /* transform: translate(50%,50%); */
-        bottom: -35px;
-        left: 65px;
+        bottom: -3rem;
+        right: 8rem;
+        /* left: 65px; */
+       
         background-color: white;
         box-shadow:1px 1px 10px rgba(128, 128, 128, 0.429);    
     }

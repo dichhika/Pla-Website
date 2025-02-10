@@ -95,35 +95,29 @@
     }
 }
 
+
+/* footer form parts */
+
 @media (max-width:550px){
     .first{
+       
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
     .last{
+       
+
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;     
 }
-/* team card page */
-.team{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-  
-}
-.team-card{
-    width: 50px;
-    height: 100px;
-}
-
-
 
 }
-/* footer form parts */
 @media (max-width:600px){
 .form{
+   
     input{
         margin: 10px;
         height: 30px;
@@ -208,22 +202,42 @@
     width: 100%;
  }
   }
-/* responsive team page media css */
-@media (max-width:1000px){
-   
 
-    .team{
-        margin: 10px;
-        flex-wrap: wrap;
-        gap:60px;
-       
-    }
-.team-card{
-  width: auto;
-    h2,p{
-        font-size: 20px;
-    }
+ /* responsive team page media css */
+@media (max-width:1000px){
+   .team-card{
+  left:13rem;
+   }
+
+   .team{
+       margin: 10px;
+       flex-wrap: wrap;
+       gap:60px;
+      
+   }
+  
 }
+@media (max-width:800px) and (min-width:450px){
+   .team-card{
+    left:100px;
+   }
+}
+@media (max-width:450px) {
+   .team-card{
+    left:50px;
+   }
+   .team-card{
+    /* width: 100%; */
+   h2,p{
+       font-size: 20px;
+   }
+}
+}
+@media (max-width:1400px) and (min-width:1000px){
+   .team-card{
+    left:80px;
+   }
+  
 }
 /* service css */
 @media (max-width:1100px) {
