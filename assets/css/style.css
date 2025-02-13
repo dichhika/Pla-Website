@@ -220,7 +220,6 @@ span{
   
   /* service page css */
   .container{
-    /* margin:50px ; */
     padding: 50px;
     h2{
         padding: 15px;
@@ -230,14 +229,16 @@ span{
   
     .service{
      display: flex;
-     justify-content: space-around;
-     width: 100%;
-     /* flex-wrap: wrap; */
+     justify-content: center;
+     gap: 20px;
+     /* width: 100%; */
+    flex-wrap: wrap;
+
     }
    .service1{
-    margin: 20px;
-    padding:30px ;
-    width: 320px;
+    /* margin: 20px; */
+    padding:25px ;
+    width: 250px;
     border: 2px solid rgba(128, 128, 128, 0.19);
     text-align: center;
 
@@ -293,7 +294,7 @@ span{
     .img2{
         position: absolute;
         top:14rem;
-       right:-8rem;
+        right:-8rem;
     }  
   img{
     width:350px;
@@ -341,9 +342,8 @@ span{
 .vision{
     margin: 20px;
     display: flex;
-    img{
-        width: auto;
-    }
+        align-items: center;
+
     h3{
        
         font-size: 30px;
