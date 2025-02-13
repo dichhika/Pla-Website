@@ -146,7 +146,7 @@ footer{
     color: #f9f9f9;
  .first{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-between;
    }
 span{
     text-decoration: underline;
@@ -157,6 +157,7 @@ span{
     .left{
         margin: 25px;
         padding: 25px;
+        width: 100%;
     }
     p{
        
@@ -183,7 +184,7 @@ span{
         input{
             margin: 20px;
             height: 50px;
-            width: 400px;
+            width: 90%;
             border-radius: 15px;
         }
         
@@ -201,7 +202,7 @@ span{
             font-size: 20px;
             color: rgb(22, 22, 101);
             position: absolute;
-            left: 300px;
+            right: 90px;
             bottom: 25px;
         }
     }
@@ -219,7 +220,7 @@ span{
   
   /* service page css */
   .container{
-    margin:50px ;
+    /* margin:50px ; */
     padding: 50px;
     h2{
         padding: 15px;
@@ -230,12 +231,12 @@ span{
     .service{
      display: flex;
      justify-content: space-around;
+     width: 100%;
      /* flex-wrap: wrap; */
     }
    .service1{
     margin: 20px;
     padding:30px ;
-    /* height: auto; */
     width: 320px;
     border: 2px solid rgba(128, 128, 128, 0.19);
     text-align: center;
@@ -438,6 +439,7 @@ span{
         padding: 30px;
         text-align: center;
         display: flex;
+        gap:20px;
         justify-content: space-evenly;
         
         
@@ -469,13 +471,13 @@ span{
     
 
     /* text written under p */
-    div p {
+    .feature-parts {
+        p{
         text-align: justify;
         
     }
 }
-
-
+}
 
 /* heading */
 .choose{
@@ -580,6 +582,7 @@ span{
         /* flex-wrap: wrap; */
         justify-content: space-evenly;
         gap:10px;
+        width: auto;
         
         img{
             width:80px; 

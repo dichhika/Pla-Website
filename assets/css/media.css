@@ -13,7 +13,9 @@
             width: auto;
 }
  /*home main image css  */
- .hello h2{
+ .hello {
+    margin-right: 20px;
+   h2{
     font-size: 35px;
  }
     .hello p{
@@ -21,25 +23,37 @@
     }
  
     }
-
+    }
     /* second image and feature parts */
     @media (max-width:756px){
         .feature{
-            display: flex;
-            flex-wrap: wrap;
-         
         p{
             font-size: 15px;
             padding: 2px;
-            margin-right: 2rem;  
+            /* margin-right: 2rem;   */
         }    
         
     }
+    .cardinfo1{
+        width: 80%;
+                
+    }
 }
-    @media (max-width:500px){
-        .feature img{
-            width: 100%;
-            margin: 0px;
+    
+    @media (max-width:656px){
+        .feature{
+            /* margin: 10px; */
+           margin-left: 22px;
+
+        }
+        .features-icon {
+           margin: 10px;
+            icon{
+                gap:5px;
+            }
+            div{
+                width: 100%;
+            }  
         }
         .icons i{
             font-size: 20px;
@@ -52,12 +66,11 @@
                     
                 }
             }
-    }
-    @media (max-width:856px){
+        }
+    @media (max-width:556px){
         .features-icon {
-            display: flex;
-            flex-wrap: wrap;
-           
+           /* margin-left: 52px; */
+            flex-wrap: wrap;  
         }
         }
         @media (max-width:500px){
@@ -75,30 +88,56 @@
             .view{
                 margin-left: 74px;
         
-             margin-top: -2rem;
+                margin-top: -2rem;
             }
 
+        }
+        @media (max-width:850px){
+            .card1{
+                
+                padding: 0px;
+                flex-wrap: wrap;
+                /* gap:20px; */
+             
+            }
         }
     /* home card parts */
     @media (max-width:500px){
         .card1{
-         
-                margin: 0px;
+            margin: 10px;
+            padding: 0px;
             flex-wrap: wrap;
-            gap:20px;
+            /* gap:20px; */
+         
         }
+        .end{
+            h2{
+                margin-left: 0px;
+            }
+        }
+        .choose{
+            h3{
+                margin-left: 0rem;
+            }
+        }
+        
     } 
-    /* service page */
-    @media (max-width:756px){
-    .service{
+    @media (max-width:1130px){
+    .partners{
         flex-wrap: wrap;
     }
+    .feature{
+        flex-wrap: wrap;
+        img{
+            width: 100%;
+            margin: 10px;
+        }
+    }
 }
-
-
 /* footer form parts */
 
-@media (max-width:550px){
+@media (max-width:950px){
+    footer{
     .first{
         display: flex;
         flex-wrap: wrap;
@@ -107,19 +146,30 @@
     .last{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;     
+        justify-content: space-around;  
+        margin: 0px;
+        padding: 0px;   
+}
+.left{
+    margin: 10px;
+    padding: 10px;
+}
+.right{
+    margin: 10px;
+    padding: 10px;
+}
+    }
+    .form{
+        button{
+      right:80px;
+    }
+}
 }
 
-}
-@media (max-width:600px){
+@media (max-width:600px) and (min-width:320px){
 .form{
-   
     input{
-        margin: 10px;
-        height: 30px;
-        width: 200px;
-       
-       
+        margin: 10px;  
     }
     input::placeholder{
         font-size: 15px;
@@ -127,12 +177,13 @@
         
     }
     button{
-        width: 50px;
-        height: 20px;
+        width: 80px;
+        /* height: 25px; */
         font-size: 15px;
-        left: 150px;
-        bottom: 18px;
+       bottom: 17px;
+       right: 45px;
     }
+
 }
 }
 
