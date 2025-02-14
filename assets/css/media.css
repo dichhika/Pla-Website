@@ -30,7 +30,6 @@
         p{
             font-size: 15px;
             padding: 2px;
-            /* margin-right: 2rem;   */
         }    
         
     }
@@ -69,21 +68,11 @@
         }
     @media (max-width:556px){
         .features-icon {
-           /* margin-left: 52px; */
+         
             flex-wrap: wrap;  
         }
         }
-        @media (max-width:500px){
-            .containers{
-                margin: 0px;
-            }
-            .service1{
-                margin: 25px;
-                padding: 25px;
-                /* width: auto; */
-            }
-            
-        }
+
         @media (max-width:491px){
             .view{
                 margin-left: 74px;
@@ -139,23 +128,23 @@
 @media (max-width:950px){
     footer{
     .first{
-        display: flex;
+        
         flex-wrap: wrap;
-        justify-content: space-around;
+    
     }
     .last{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;  
+        
         margin: 0px;
         padding: 0px;   
 }
 .left{
-    margin: 10px;
+    margin-left: 10px;
     padding: 10px;
 }
 .right{
-    margin: 10px;
+    margin-right: 10px;
     padding: 10px;
 }
     }
@@ -267,7 +256,6 @@
     left:50px;
    }
    .team-card{
-    /* width: 100%; */
    h2,p{
        font-size: 20px;
    }
@@ -280,13 +268,23 @@
   
 }
 /* service css */
-@media (max-width: 745px) {
-    .container{
-        margin: 10px;
-        padding: 10px;
-
+@media (max-width: 1024px) {
+    .service {
+      grid-template-columns: repeat(3, 1fr);
     }
-}
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .service {
+      grid-template-columns: 1fr;
+    }
+  }
   /* about page css  */
   
    @media (max-width:500px){

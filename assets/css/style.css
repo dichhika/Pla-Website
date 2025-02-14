@@ -219,35 +219,39 @@ span{
   } 
   
   /* service page css */
-  .container{
-    padding: 50px;
-    h2{
-        padding: 15px;
-        font-family:  "Oswald",sans-serif;
-        font-weight: 300;
-    }
+ .service-container {
+  max-width: 1400px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+h2 {
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+.service {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service1 {
+  padding: 25px;
+  border: 2px solid rgba(128, 128, 128, 0.19);
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.service1:hover {
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.429);
+}
   
-    .service{
-     display: flex;
-     justify-content: center;
-     gap: 20px;
-     /* width: 100%; */
-    flex-wrap: wrap;
-
-    }
-   .service1{
-    /* margin: 20px; */
-    padding:25px ;
-    width: 250px;
-    border: 2px solid rgba(128, 128, 128, 0.19);
-    text-align: center;
-
-   }
-  }
-  .service1:hover{
-    box-shadow:1px 1px 10px rgba(128, 128, 128, 0.429);
-
-  }
+   
+  
    /* team page css */
    .team{
     margin: 30px;
@@ -525,48 +529,18 @@ span{
         
     }
 }
-.containers{
-    margin:50px ;
-    padding: 50px;
-    h2{
-        padding: 15px;
-        font-family:  "Oswald",sans-serif;
-        font-weight: 300;
-    }
-  
-    .services{
-     display: flex;
-     gap: 20px;
-     justify-content: space-around;
-     flex-wrap: wrap;
-    }
-   .services1{
-    margin: 0px;
-    padding:20px ;
-    height: auto;
-    width: 250px;
-    border: 2px solid rgba(128, 128, 128, 0.19);
-    text-align: center;
 
-   }
-  }
-  
-  
     .view{
         border: 1px solid grey;
         width:100px;
         padding: 10px;
-        margin-left: 8rem;
+        margin-left: 3rem;
         text-align: center;
-        margin-top:-5rem;
         a{
             text-decoration: none;
             color: grey;
         }
-        p{
-            font-size: 15px;
-           
-        }
+       
     }
     .end{
         margin: 30px;
