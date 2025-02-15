@@ -124,28 +124,49 @@
     }
 }
 /* footer form parts */
+@media (max-width:1400px) {
+    .last{
+p:nth-child(1){
+    margin-right: 0rem;
+}
+}
 
-@media (max-width:950px){
+}
+@media (max-width:1300px) and (min-width:1000px){
+  
+.form{
+    button{
+  right:35px;
+}
+}
+.first{
+    justify-content: flex-end;
+}
+.left{
+  margin-left: 2rem;
+  position: relative;
+  left: -39px;
+}
+}
+@media (max-width:1000px){
     footer{
     .first{
-        
         flex-wrap: wrap;
-    
     }
     .last{
-        display: flex;
         flex-wrap: wrap;
-        
         margin: 0px;
         padding: 0px;   
 }
 .left{
     margin-left: 10px;
     padding: 10px;
+    width:100%
 }
 .right{
-    margin-right: 10px;
+    margin-left: 10px;
     padding: 10px;
+    width: 100%;
 }
     }
     .form{
@@ -234,8 +255,12 @@
 
  /* responsive team page media css */
 @media (max-width:1000px){
+    .container{
+        padding: 10px;
+    }
    .team-card{
   left:13rem;
+  
    }
 
    .team{
@@ -272,6 +297,10 @@
     .service {
       grid-template-columns: repeat(3, 1fr);
     }
+    .service-container{
+        padding: 20px;
+        
+    }
   }
   
   @media (max-width: 768px) {
@@ -284,6 +313,7 @@
     .service {
       grid-template-columns: 1fr;
     }
+
   }
   /* about page css  */
   
@@ -299,6 +329,17 @@
        margin-right:-5rem;
        
     }
+    
+}
+@media (max-width:1260px) and (min-width:980px){
+
+.manage{
+    margin: 10px;
+     img{
+         width: 400px;
+     }
+    
+ }
 }
 @media (max-width:750px){
 .vision{
@@ -314,18 +355,12 @@
             width: auto;
            }
      }
-     .manage{
-         img{
-             margin: 15px;
-         }
-         p{
-            width: 100%;
-            font-size: 20px;
-         }
+     .manage p{
+        width: 100%;
+        font-size: 20px;
      }
-
 }
-@media(max-width:640px){
+@media(max-width:680px){
     .img2{
         display: none;
     }
@@ -336,30 +371,27 @@
     .aboutus{
         margin-top: 0px;
         p{
-            padding: 0px;
+            padding: 10px;
         }
     }
     .manage{
-        
         img{
-           width: 100%;
            height: auto;
+           margin: 0px;
         }
 }
 
 }
-@media (max-width:1180px) and (min-width:640px){
+@media (max-width:1180px) and (min-width:1000px){
     .about{
-       gap:120px;  
+       gap:150px;  
     }
 }
-   @media (max-width:1180px){
-     .about{
-        gap:13rem;  
-     }
+   @media (max-width:1000px){
+
      .about{
         flex-wrap: wrap;
-        /* gap:20px; */
+        gap:13rem;
      }
      .aboutus{
         width: 100%;
@@ -367,6 +399,12 @@
      }
      .manage{
         flex-wrap: wrap;
+        img{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+        }
      }
      .vision-mission{
          margin: 0px;

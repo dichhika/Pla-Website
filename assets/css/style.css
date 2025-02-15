@@ -146,7 +146,7 @@ footer{
     color: #f9f9f9;
  .first{
     display: flex;
-    justify-content: space-between;
+    
    }
 span{
     text-decoration: underline;
@@ -155,9 +155,11 @@ span{
     
    }
     .left{
-        margin: 25px;
+        margin-left: 7rem;
         padding: 25px;
-        width: 100%;
+        /* width: 100%; */
+        width:430px;
+
     }
     p{
        
@@ -169,8 +171,9 @@ span{
         margin: 5px;
     }
     .right{
-        margin: 25px;
+        margin-left: 9rem;
         padding: 25px;
+        width:630px;
         
 
     }
@@ -211,6 +214,10 @@ span{
     justify-content: space-around;
     p{
         color: grey;
+
+    }
+    p:nth-child(1){
+        margin-right: 15rem;
     }
     a{
         text-decoration: none;
@@ -253,6 +260,7 @@ h2 {
    
   
    /* team page css */
+   
    .team{
     margin: 30px;
     display: flex;
@@ -260,7 +268,7 @@ h2 {
     
     .member{
         position: relative;
-        z-index: 1;
+        /* z-index: 1; */
     }
     img{
         width: 100%;
@@ -285,11 +293,15 @@ h2 {
     
   }
    /* about page css */
+   .container{
+    padding: 50px;
+   }
    .about {
     display: flex;
     justify-content:space-around;
     width: 100%;
     gap:30px;
+   /* padding: 10px; */
     
     .img1{
         position: relative;
@@ -344,12 +356,12 @@ h2 {
    
 }
 .vision{
-    margin: 20px;
     display: flex;
-        align-items: center;
+    align-items: center;
+    justify-content: center;
+      
 
     h3{
-       
         font-size: 30px;
         font-family:  "Oswald",sans-serif;
         font-weight: 300;
@@ -380,7 +392,9 @@ h2 {
 .manage{
     margin: 20px;
     display: flex;
-    justify-content: space-between;
+    gap:20px;
+    
+    justify-content: center;
     img{
             margin: 20px;
             width: 550px;
@@ -503,9 +517,10 @@ h2 {
 
 /* single icon */
 .icons {
-    gap:  20px;
+    gap:  10px;
     display: flex;
     /* width: 100%; */
+    align-items: center;
 
     i {
 
