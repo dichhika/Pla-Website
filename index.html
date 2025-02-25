@@ -48,19 +48,168 @@
  
     <!-- main image parts -->
     <section class="home">
-      <div class="contant">
-        <div class="pic"><img src="assets/img/home-img/1.jpg" alt="" /></div>
-      <div class="hello">
-        <h2>
-          Empowering Businesses Through 
-          Financial Clarity
-        </h2>
-        <p >
-          We provide essential services, turning complex financial data into
-          clear insights for business success.
-        </p>
-      </div>
-    </div>
+      <style>
+        /* home slider */
+        /* slider image */
+        .slider,
+        .slider-home {
+          position: relative;
+          width: 100%;
+        }
+  
+        .slider-img img {
+          height: 680px;
+          width: 100%;
+          object-fit: cover;
+        }
+  
+        .slider-img::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #092a49b9;
+        }
+  
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          bottom: 0px;
+          padding: 20px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 5s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+  
+        .next {
+          color: #0796fe;
+          right: 0;
+          background-color: #092a49;
+          border-radius: 3px 0 0 3px;
+        }
+  
+        .prev {
+          color: #0796fe;
+          right: 3rem;
+          background-color: #092a49;
+          border-radius: 3px 0 0 3px;
+        }
+        .prev:hover,
+        .next:hover {
+          background-color: #0796fe;
+          color: white;
+        }
+  
+        /* text 1*/
+        .slidertext {
+          text-align: center;
+          position: absolute;
+          top: 27%;
+          left: 0;
+          right: 0;
+          max-width: 100%;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h2 {
+            font-size: 44px;
+            font-weight: 200;
+          }
+  
+          p {
+            font-size: 20px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <!-- Home page card -->
+      <section class="slider-home">
+        <div class="slider">
+          <div class="slider-img">
+            <img src="assets/img/home-img/1.jpg" alt="home page" />
+          </div>
+          <div class="slidertext">
+            <h2 style="color: white">
+              Empowering Businesses Through Financial Clarity
+            </h2>
+            <p style="color: white">
+              We provide essential services, turning complex financial data into
+              clear insights for business success.
+            </p>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider-img">
+            <img src="assets/img/home-img/2.jpg" alt="home page" />
+          </div>
+  
+          <div class="slidertext">
+            <h2 style="color: rgb(255, 255, 255)">
+              Navigating Financial Landscapes
+            </h2>
+            <p style="color: white">
+              We expertly guide businesses through complex financial environments,
+              ensuring compliance and strategic growth.
+            </p>
+          </div>
+        </div>
+  
+        <div class="slider">
+          <div class="slider-img">
+            <img src="assets/img/home-img/3.jpg" alt="home page" />
+          </div>
+  
+          <div class="slidertext">
+            <h2 style="color: rgb(255, 255, 255)">
+              Transforming Data into Decisions
+            </h2>
+            <p style="color: white">
+              We analyze financial data to deliver actionablr insights, empowering
+              businesses to make informed desision for their future.
+            </p>
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </section>
+  
+      <!-- javascript -->
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slider");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+
       <div class="card1">
         <div class="cardinfo1">
           <img src="assets/img/home-img/icon-4.png" alt="" />
@@ -187,7 +336,7 @@
     </div>
     </section>
      <!-- footer section -->
-     <footer>
+     <!-- <footer>
       <div class="first">
       <div class="left">
       <h2 style="margin: 10px; line-height: 70px;"><span>Our H</span>ead Office</h2>
@@ -216,6 +365,45 @@
        <p>&copy; 2025 <a href="https://www.p-lunia.com/">P. Lunia & Associates</a>,All Right Reserved.</p>
        <p>Designed By <a href="https://www.velociscore.com/">Velocis Core</a></p>
       </div> 
-    <!-- 3:45-5:10 -->
-  </body>
+  
+     </footer> -->
+     <footer>
+      <div class="footer-wraper" >
+          <div class="footer-container">
+              <div class="left-side">
+                  <h3>Our Head Office</h3>
+                  <p>
+                      <i class="fa fa-map-marker-alt"></i>F75J+32R, Hanuman Das
+                      Marg, Biratnagar 56613
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone"></i>+977 9852075322
+                  </p>
+                  <p><i class="fa fa-envelope"></i>info@p-lunia.com</p>
+                  <div class="footer-social">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+  
+              </div>
+              <div class="right-side">
+                  <h3>Newsletter</h3>
+                  <p>Subscribe to our newsletter for latest updates,financial tips,and insights.Join our community and
+                      empower your financial journey! Sign up today!</p>
+                  <div class="form">
+                      <input class="form-control" placeholder="Your Email Address">
+                      <button class="btn">Submit</button>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="bottom-footer">
+              <p>© 2025 <a href="index.html"> P. Lunia & Associates</a>,All Right Reserved.</p>
+              <p> Designed By <a href="https://www.velociscore.com/">Velocis Core</a></p>
+          </div>
+      </div>
+  </footer>
+    </body>
 </html>
