@@ -117,6 +117,7 @@
 }
 /* footer form parts */
 @media (max-width:456px){
+
 .form{
     margin-left: -10px;
 }
@@ -124,6 +125,7 @@
     gap:10px;
     flex-wrap: wrap;
 }
+
 }
 
   /* contact page card parts */
